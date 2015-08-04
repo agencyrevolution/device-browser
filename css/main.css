@@ -15,14 +15,15 @@ body {
 .df--iphone {
   background-image: url('../images/iphone-6.png');
   background-position: 50%;
-  height: 750px;
-  width: 360px;
+  background-size: 414px;
+  height: 808px;
+  width: 374px;
 }
 
 .df--iphone .viewer {
-  height:498px;
-  width: 280px;
-  margin-top: 110px;
+  height: 575px;
+  width: 324px;
+  margin-top: 98px;
   margin-left: 9px;
 }
 
