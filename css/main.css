@@ -1,0 +1,21 @@
+body {
+  background-color: #e2e2e2;
+  text-align: center;
+}
+
+#viewer {
+  height:498px;
+  width: 280px;
+  border: none;
+  margin-top: 110px;
+  margin-left: 9px;
+}
+
+.df--iphone {
+  background-image: url('../images/iphone-6.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 750px;
+  margin: 0 auto;
+  width: 360px;
+}

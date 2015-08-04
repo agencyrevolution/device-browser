@@ -8,16 +8,19 @@
     <meta name="apple-mobile-web-app-title" content="X-ray">
     <meta charset="utf-8">
     <title>X-ray - Mobile Websites for Desktop</title>
+    <link href="css/main.css" rel="stylesheet">
     <script>function getParameterByName( name ){  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");  var regexS = "[\\?&]"+name+"=([^&#]*)";  var regex = new RegExp( regexS );  var results = regex.exec( window.location.href );  if( results == null )    return "";  else return results[1];}</script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script language="javascript">
       var $j=jQuery.noConflict();
       $j(document).ready(function(){
-        $j("#viewer").attr("src",getParameterByName("document")); 
+        $j("#viewer").attr("src",getParameterByName("url")); 
       });
     </script>
   </head>
   <body>
-    <iframe id="viewer" src="#"></iframe>
+    <div class="df df--iphone df--light">
+      <iframe id="viewer" src="#"></iframe>
+    </div>
   </body>
 </html>
