@@ -14,13 +14,16 @@
     <script language="javascript">
       var $j=jQuery.noConflict();
       $j(document).ready(function(){
-        $j("#viewer").attr("src",getParameterByName("url")); 
+        $j("#viewer").attr("src",getParameterByName("url"));
+        if (getParameterByName("device") === "tablet") {
+          $j(".df").removeClass("df--iphone").addClass("df--ipad");
+        }
       });
     </script>
   </head>
   <body>
     <div class="df df--iphone df--light">
-      <iframe id="viewer" src="#"></iframe>
+      <iframe id="viewer" class="viewer" src="#"></iframe>
     </div>
   </body>
 </html>

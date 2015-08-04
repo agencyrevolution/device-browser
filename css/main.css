@@ -3,19 +3,40 @@ body {
   text-align: center;
 }
 
-#viewer {
-  height:498px;
-  width: 280px;
+.viewer {
   border: none;
-  margin-top: 110px;
-  margin-left: 9px;
+}
+
+.df {
+  background-repeat: no-repeat;
+  margin: 0 auto;
 }
 
 .df--iphone {
   background-image: url('../images/iphone-6.png');
-  background-repeat: no-repeat;
   background-position: 50%;
   height: 750px;
-  margin: 0 auto;
   width: 360px;
+}
+
+.df--iphone .viewer {
+  height:498px;
+  width: 280px;
+  margin-top: 110px;
+  margin-left: 9px;
+}
+
+.df--ipad {
+  background-image: url('../images/ipad-air-2-landscape.png');
+  background-position: 0% 50%;
+  background-size: 1124px;
+  height: 799px;
+  width: 1124px;
+}
+
+.df--ipad .viewer {
+  height: 704px;
+  width: 833px;
+  margin-top: 46px;
+  margin-left: 49px;
 }
